@@ -1,7 +1,7 @@
 {
   "name": "@iwmywn/generate-index",
   "author": "iwmywn",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "CLI tool to auto-generate index.ts/js files for importing and exporting modules in a folder structure.",
   "homepage": "https://github.com/iwmywn/generate-index#readme",
   "repository": {
