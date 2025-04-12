@@ -53,9 +53,6 @@ npm run generate:index
 
 ```ts
 // ⚠️ This file is auto-generated. Do not edit manually.
-// To regenerate, run one of the following:
-//   • With installation: npm run generate:index
-//   • Without installation: npx @iwmywn/generate-index <folder-path>
 // For more info: https://github.com/iwmywn/iwmywn-generate-index#readme
 
 import { SomeComponent } from "./SomeComponent";
