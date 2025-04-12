@@ -21,13 +21,11 @@ Example:
 npx @iwmywn/generate-index src/components src/pages
 ```
 
-## Installation
+## With installation
 
 ```bash
 npm i -D @iwmywn/generate-index
 ```
-
-## Usage
 
 In your package.json, add a script like this:
 

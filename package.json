@@ -15,8 +15,7 @@
     "iwmywn-generate-index": "dist/index.js"
   },
   "scripts": {
-    "build": "tsc",
-    "lint": "eslint"
+    "build": "tsc"
   },
   "keywords": [
     "cli",
