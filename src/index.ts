@@ -112,9 +112,6 @@ function askQuestion(question: string): Promise<string> {
 
     const indexContent =
       `// ⚠️ This file is auto-generated. Do not edit manually.\n` +
-      `// To regenerate, run one of the following:\n` +
-      `//   • With installation: npm run generate:index\n` +
-      `//   • Without installation: npx @iwmywn/generate-index <folder-path>\n` +
       `// For more info: https://github.com/iwmywn/iwmywn-generate-index#readme\n\n` +
       [...importLines, ...importTypeLines].join("\n") +
       "\n\n" +
