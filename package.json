@@ -34,7 +34,6 @@
   },
   "devDependencies": {
     "@types/node": "^22.14.1",
-    "eslint": "^9.24.0",
-    "tsx": "^4.19.3"
+    "eslint": "^9.24.0"
   }
 }

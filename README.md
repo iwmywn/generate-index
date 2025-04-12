@@ -24,7 +24,7 @@ npx @iwmywn/generate-index src/components src/pages
 ## Installation
 
 ```bash
-npm i -D @iwmywn/generate-index tsx
+npm i -D @iwmywn/generate-index
 ```
 
 ## Usage
