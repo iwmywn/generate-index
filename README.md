@@ -12,7 +12,7 @@ This CLI tool auto-generates index.ts or index.js files to import and export mod
 ## Installation
 
 ```bash
-npm i @iwmywn/generate-index tsx
+npm i -D @iwmywn/generate-index tsx
 ```
 
 ## Usage
@@ -21,7 +21,7 @@ In your package.json, add a script like this:
 
 ```json
 "scripts": {
-  "generate:index": "tsx scripts/generateIndex.ts <folder-path-1> <folder-path-2> ..."
+  "generate:index": "@iwmywn/generate-index <folder-path-1> <folder-path-2> ..."
 }
 ```
 
@@ -29,7 +29,7 @@ Example:
 
 ```json
 "scripts": {
-  "generate:index": "tsx scripts/generateIndex.ts src/components src/pages"
+  "generate:index": "@iwmywn/generate-index src/components src/pages"
 }
 ```
 
