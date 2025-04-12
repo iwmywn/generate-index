@@ -12,7 +12,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
-    "@iwmywn/generate-index": "dist/index.js"
+    "iwmywn-generate-index": "dist/index.js"
   },
   "scripts": {
     "build": "tsc",
