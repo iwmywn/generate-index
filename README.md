@@ -12,7 +12,7 @@ This CLI tool auto-generates index.ts or index.js files to import and export mod
 ## Installation
 
 ```bash
-npm i -D generate-index tsx
+npm i @iwmywn/generate-index tsx
 ```
 
 ## Usage

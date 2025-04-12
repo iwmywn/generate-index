@@ -1,5 +1,5 @@
 {
-  "name": "generate-index",
+  "name": "@iwmywn/generate-index",
   "author": "iwmywn",
   "version": "1.0.0",
   "description": "CLI tool to auto-generate index.ts/js files for importing and exporting modules in a folder structure.",
