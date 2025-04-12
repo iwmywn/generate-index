@@ -29,11 +29,8 @@
   ],
   "license": "MIT",
   "type": "module",
-  "dependencies": {
-    "@types/eslint": "^9.6.1"
-  },
   "devDependencies": {
     "@types/node": "^22.14.1",
-    "eslint": "^9.24.0"
+    "tsx": "^4.19.3"
   }
 }
