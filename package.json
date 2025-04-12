@@ -1,0 +1,40 @@
+{
+  "name": "generate-index",
+  "author": "iwmywn",
+  "version": "1.0.0",
+  "description": "CLI tool to auto-generate index.ts/js files for importing and exporting modules in a folder structure.",
+  "homepage": "https://github.com/iwmywn/generate-index#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iwmywn/generate-index.git"
+  },
+  "bugs": "https://github.com/iwmywn/generate-index/issues",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "generate-index": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint"
+  },
+  "keywords": [
+    "cli",
+    "index",
+    "generator",
+    "typescript",
+    "export",
+    "import",
+    "auto"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@types/eslint": "^9.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "eslint": "^9.24.0",
+    "tsx": "^4.19.3"
+  }
+}
