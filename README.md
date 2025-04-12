@@ -58,7 +58,7 @@ npm run generate:index
 // To regenerate, run one of the following:
 //   • With installation: npm run generate:index
 //   • Without installation: npx @iwmywn/generate-index <folder-path>
-// For more info: https://github.com/iwmywn/generate-index#readme
+// For more info: https://github.com/iwmywn/iwmywn-generate-index#readme
 
 import { SomeComponent } from "./SomeComponent";
 import { AnotherComponent } from "./AnotherComponent";
