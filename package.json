@@ -1,6 +1,6 @@
 {
   "name": "@iwmywn/generate-index",
-  "author": "iwmywn",
+  "author": "Hoang Anh Tuan <itsmethu2408@gmail.com>",
   "version": "1.0.8",
   "description": "CLI tool to auto-generate index.ts/js files for importing and exporting modules in a folder structure.",
   "homepage": "https://github.com/iwmywn/iwmywn-generate-index#readme",
@@ -9,13 +9,21 @@
     "url": "git+https://github.com/iwmywn/iwmywn-generate-index.git"
   },
   "bugs": "https://github.com/iwmywn/iwmywn-generate-index/issues",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.mjs"
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "files": [
+    "dist"
+  ],
   "bin": {
-    "iwmywn-generate-index": "dist/index.js"
+    "iwmywn-generate-index": "./dist/index.mjs"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "unbuild",
+    "dev": "unbuild --stub"
   },
   "keywords": [
     "cli",
@@ -30,6 +38,8 @@
   "type": "module",
   "devDependencies": {
     "@types/node": "^22.14.1",
-    "tsx": "^4.19.3"
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3",
+    "unbuild": "^3.5.0"
   }
 }
