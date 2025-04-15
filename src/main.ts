@@ -42,12 +42,14 @@ export async function main() {
       const hasDefault = /export\s+default/.test(content);
       const matches = [
         ...content.matchAll(
-          /export\s+(const|function|type|interface|class)\s+(\w+)/g
+          /export\s+(const|let|var|function|type|interface|class|enum)\s+(\w+)/g
         ),
       ];
+      const groupedExports = [...content.matchAll(/export\s*{\s*([^}]+)\s*}/g)];
 
       const normalExports: string[] = [];
       const typeExports: string[] = [];
+      const identifiersFromGrouped: string[] = [];
 
       for (const [, kind, identifier] of matches) {
         if (kind === "type" || kind === "interface") {
@@ -55,6 +57,11 @@ export async function main() {
         } else {
           normalExports.push(identifier);
         }
+      }
+
+      for (const [, group] of groupedExports) {
+        const identifiers = group.split(",").map((id) => id.trim());
+        identifiersFromGrouped.push(...identifiers);
       }
 
       if (hasDefault) {
@@ -74,6 +81,15 @@ export async function main() {
           `import type { ${typeExports.join(", ")} } from "${importPath}";`
         );
         exportTypeNames.push(...typeExports);
+      }
+
+      if (identifiersFromGrouped.length > 0) {
+        importLines.push(
+          `import { ${identifiersFromGrouped.join(
+            ", "
+          )} } from "${importPath}";`
+        );
+        exportNames.push(...identifiersFromGrouped);
       }
     }
 
